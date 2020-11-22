@@ -1,4 +1,4 @@
-package com.artemas.greetingservice.patient
+package com.artemas.greetingservice.greeting
 
 import org.springframework.http.MediaType.APPLICATION_JSON_VALUE
 import org.springframework.web.bind.annotation.GetMapping
