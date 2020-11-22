@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RestController
 @RestController
 @RequestMapping("/api")
 class GreetingEndpoint {
+
     @GetMapping("/greeting/{name}", produces = [APPLICATION_JSON_VALUE])
     fun generatorGreeting(@PathVariable name: String): Greeting {
         return Greeting("Hello and welcome $name!!")
