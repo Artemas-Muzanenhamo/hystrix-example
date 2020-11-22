@@ -6,9 +6,10 @@ import org.springframework.web.bind.annotation.RestController
 
 @RestController
 @RequestMapping("/api")
-class PatientEndpoint {
-    @PostMapping("/patients/patient")
-    fun retrievePatientInformation(patient: Patient) {
-        return patientService.getPatientHealthInformation(patient)
+class GreetingGeneratorEndpoint(val greetingGeneratorService: GreetingGeneratorService) {
+
+    @PostMapping("/greet")
+    fun retrievePatientInformation(name: String): Greeting {
+        return greetingGeneratorService.generateGreetingWith(name)
     }
 }

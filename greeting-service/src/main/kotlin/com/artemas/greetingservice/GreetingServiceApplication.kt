@@ -1,11 +1,11 @@
-package com.artemas.healthservice
+package com.artemas.greetingservice
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class HealthServiceApplication
+class GreetingServiceApplication
 
 fun main(args: Array<String>) {
-    runApplication<HealthServiceApplication>(*args)
+    runApplication<GreetingServiceApplication>(*args)
 }

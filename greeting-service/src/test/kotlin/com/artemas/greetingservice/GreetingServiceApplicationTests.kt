@@ -1,10 +1,10 @@
-package com.artemas.patientservice
+package com.artemas.greetingservice
 
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest
 
 @SpringBootTest
-class PatientServiceApplicationTests {
+class GreetingServiceApplicationTests {
 
     @Test
     fun contextLoads() {

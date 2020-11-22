@@ -1,4 +1,4 @@
-package com.artemas.healthservice.patient
+package com.artemas.patientservice.patient
 
 enum class Condition {
     HEALTHY,

@@ -1,6 +1,5 @@
-package com.artemas.healthservice.patient
+package com.artemas.greetingservice.patient
 
-import com.artemas.healthservice.patient.Condition.HEALTHY
 import org.springframework.http.MediaType.APPLICATION_JSON_VALUE
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PathVariable
@@ -9,10 +8,10 @@ import org.springframework.web.bind.annotation.RestController
 
 @RestController
 @RequestMapping("/api")
-class HealthInformationEndpoint {
-    @GetMapping("/patients/{id}", produces = [APPLICATION_JSON_VALUE])
-    fun patientHealthInformationByPatient(@PathVariable id: Long): HealthInfo {
-        return HealthInfo(Patient(id, "artemas", "prime"), HEALTHY)
+class GreetingEndpoint {
+    @GetMapping("/greeting/{name}", produces = [APPLICATION_JSON_VALUE])
+    fun generatorGreeting(@PathVariable name: String): Greeting {
+        return Greeting("Hello and welcome $name!!")
     }
 }
 
