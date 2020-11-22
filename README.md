@@ -1,7 +1,7 @@
 # Hystrix Example
 
-## Patient Service
-- Service with patient information.
+## Greeting Generator Service
+- Web facing service which generates a greeting taking a name as input.
 
-## Health Service
-- Service with health information for patients.
+## Greeting Service
+- Service with the logic to generate a greeting given a name.
