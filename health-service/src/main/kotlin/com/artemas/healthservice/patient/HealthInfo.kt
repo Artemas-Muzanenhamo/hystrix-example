@@ -8,5 +8,5 @@ data class HealthInfo(
 data class Patient(
         val id: Long,
         val name: String,
-        val surname: String,
+        val surname: String
 )
