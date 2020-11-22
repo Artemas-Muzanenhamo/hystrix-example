@@ -1,4 +1,4 @@
-package com.artemas.patientservice.patient
+package com.artemas.greetinggeneratorservice.web
 
 enum class Condition {
     HEALTHY,

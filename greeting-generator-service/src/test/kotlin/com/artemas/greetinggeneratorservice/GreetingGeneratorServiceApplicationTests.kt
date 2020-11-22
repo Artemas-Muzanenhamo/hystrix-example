@@ -1,4 +1,4 @@
-package com.artemas.patientservice
+package com.artemas.greetinggeneratorservice
 
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest
